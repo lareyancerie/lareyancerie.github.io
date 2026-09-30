@@ -66,12 +66,12 @@ const AVEC_IMAGE = [
   "aino", "flins", "illuga", "ineffa", "jahoda", "lauma", "linnea", "nefer",
   "nicole", "prune",
   /* Snezhnaya */
-  "columbina", "alyosha", "arlecchino", "odette", "sandrone", "tartaglia",
+  "columbina", "alyosha", "arlecchino", "odette", "vesna", "vodyanitsa", "sandrone", "tartaglia",
   /* Autre */
   "aloy", "skirk", "voyageur"
 ];
 
-const VERSION_JEU = "7.0";
+const VERSION_JEU = "7.1";
 const MAJ = "Septembre 2026";
 
 const PERSONNAGES = [
@@ -979,6 +979,12 @@ const PERSONNAGES = [
     equipes:[{nom:"Swirl Varka",membres:["Prune","Varka","Venti","Klee"]},{nom:"Aggravate",membres:["Prune","Clorinde","Fischl","Kirara"]}] } },
 
 /* ========================= SNEZHNAYA & FATUI ========================= */
+{ id:"vesna", nom:"Vesna", element:"Anemo", arme:"Épée", rarete:5, region:"Snezhnaya", role:"DPS principal",
+  bio:"Commandante de la Druzhina de Snezhnaya, arrivée avec la version 7.1." ,
+  note:"Vesna vient de sortir : aucun build de référence n'est affiché tant qu'il n'a pas été vérifié. Les builds des membres juste en dessous sont la meilleure source." },
+{ id:"vodyanitsa", nom:"Vodyanitsa", element:"Hydro", arme:"Catalyseur", rarete:5, region:"Snezhnaya", role:"Support / Soigneuse",
+  bio:"Soprano de la Troupe Korolevskiy de Snezhnaya, arrivée avec la version 7.1." ,
+  note:"Vodyanitsa vient de sortir : aucun build de référence n'est affiché tant qu'il n'a pas été vérifié. Les builds des membres juste en dessous sont la meilleure source." },
 { id:"alyosha", nom:"Alyosha", element:"Electro", arme:"Lance", rarete:4, region:"Snezhnaya", role:"Support / Sous-DPS", tier:"T0.5",
   bio:"Chasseur aguerri de Snezhnaya, qui soutient son équipe par des buffs et des soins liés aux réactions Stellaires." ,
   build:{ armes:["Lumière du faucheur","Lance de Favonius","Tamayuratei no Ohanashi","Chant de la veillée","Berge de la Voûte d'Azur","« La prise »"],
