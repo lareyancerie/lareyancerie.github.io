@@ -17,9 +17,9 @@
    Tant qu'une image manque, la carte affiche l'initiale : rien ne casse.
    ============================================================ */
 
-const IMAGES_HSR = ["march-7th", "dan-heng", "himeko", "welt", "kafka", "louve-d-argent", "arlan", "asta", "herta", "saber", "archer", "bronya", "seele", "serval", "gepard", "natasha", "pela", "clara", "sampo", "hook", "lynx", "luka", "topaz-et-compti", "qingque", "tingyun", "luocha", "jing-yuan", "blade", "sushang", "yukong", "fu-xuan", "yanqing", "guinaifen", "bailu", "jingliu", "dan-heng-imbibitor-lunae", "xueyi", "hanya", "huohuo", "jiaoqiu", "feixiao", "yunli", "lingsha", "moze", "march-7th-chasse", "peregrine", "gallagher", "argenti", "ruan-mei", "aventurine", "dr-ratio", "sparkle", "cygne-noir", "acheron", "robin", "luciole", "micha", "sunday", "jade", "le-fossoyeur", "rappa", "le-dahlia", "la-grande-herta", "aglae", "tribbie", "mydei", "anaxa", "cipher", "castorice", "phaenon", "hyacine", "hysilens", "cerydra", "nocterna", "dan-heng-permansor-terrae", "cyrene", "sparxie", "yao-guang", "ashveil", "evanescia", "louve-d-argent-niv-999", "blade-mortenax", "rin-tohsaka", "gilgamesh", "himeko-nova", "robin-estivaria", "aventurine-croisette", "pionnier-destruction", "pionnier-preservation", "pionnier-harmonie", "pionnier-souvenir", "pionnier-allegresse"];
-const IMAGES_WUWA = ["aalto", "yangyang", "cartethyia", "ciaccona", "iuno", "jianxin", "jiyan", "qingxiao", "qiuyuan", "rover-aero", "sigrika", "baizhi", "sanhua", "youhu", "carlotta", "hiyuki", "lingyang", "lucilla", "suisui", "zhezhi", "buling", "lumi", "yuanwu", "augusta", "calcharo", "rebecca", "rover-electro", "xiangli-yao", "yinlin", "chixia", "mortefi", "aemeath", "brant", "changli", "denia", "encore", "galbrena", "jingran", "lupa", "mornye", "danjin", "taoqi", "camellya", "cantarella", "chisa", "phrolova", "roccia", "rover-havoc", "yangyang-xuanling", "jinhsi", "lucy", "luuk-herssen", "lynae", "phoebe", "rover-spectro", "shorekeeper", "verina", "zani"];
-const IMAGES_NTE = ["adler", "aurelia", "baicang", "chaos", "chiz", "daffodill", "edgar", "fadia", "haniel", "hathor", "hotori", "iroi", "jiuyuan", "lacrimosa", "linko", "mint", "nanally", "sakiri", "shinku", "skia", "zankou", "zero"];
+const IMAGES_HSR = ["march-7th", "dan-heng", "himeko", "welt", "kafka", "louve-d-argent", "arlan", "asta", "herta", "saber", "archer", "bronya", "seele", "serval", "gepard", "natasha", "pela", "clara", "sampo", "hook", "lynx", "luka", "topaz-et-compti", "qingque", "tingyun", "luocha", "jing-yuan", "blade", "sushang", "yukong", "fu-xuan", "yanqing", "guinaifen", "bailu", "jingliu", "dan-heng-imbibitor-lunae", "xueyi", "hanya", "huohuo", "jiaoqiu", "feixiao", "yunli", "lingsha", "moze", "march-7th-chasse", "peregrine", "gallagher", "argenti", "ruan-mei", "aventurine", "dr-ratio", "sparkle", "cygne-noir", "acheron", "robin", "luciole", "micha", "sunday", "jade", "le-fossoyeur", "rappa", "le-dahlia", "la-grande-herta", "aglae", "tribbie", "mydei", "anaxa", "cipher", "castorice", "phaenon", "hyacine", "hysilens", "cerydra", "nocterna", "dan-heng-permansor-terrae", "cyrene", "sparxie", "yao-guang", "ashveil", "evanescia", "louve-d-argent-niv-999", "blade-mortenax", "rin-tohsaka", "gilgamesh", "himeko-nova", "robin-estivaria", "aventurine-croisette", "pionnier-destruction", "pionnier-preservation", "pionnier-harmonie", "pionnier-souvenir", "pionnier-allegresse", "perle"];
+const IMAGES_WUWA = ["aalto", "yangyang", "cartethyia", "ciaccona", "iuno", "jianxin", "jiyan", "qingxiao", "qiuyuan", "rover-aero", "sigrika", "baizhi", "sanhua", "youhu", "carlotta", "hiyuki", "lingyang", "lucilla", "suisui", "zhezhi", "buling", "lumi", "yuanwu", "augusta", "calcharo", "rebecca", "rover-electro", "xiangli-yao", "yinlin", "chixia", "mortefi", "aemeath", "brant", "changli", "denia", "encore", "galbrena", "jingran", "lupa", "mornye", "danjin", "taoqi", "camellya", "cantarella", "chisa", "phrolova", "roccia", "rover-havoc", "yangyang-xuanling", "jinhsi", "lucy", "luuk-herssen", "lynae", "phoebe", "rover-spectro", "shorekeeper", "verina", "zani", "hsin", "suoming"];
+const IMAGES_NTE = ["adler", "aurelia", "baicang", "chaos", "chiz", "daffodill", "edgar", "fadia", "haniel", "hathor", "hotori", "iroi", "jiuyuan", "lacrimosa", "linko", "mint", "nanally", "sakiri", "shinku", "skia", "zankou", "zero", "blackbird"];
 
 const PERSONNAGES_HSR = [
   {"id": "march-7th", "nom": "March 7th", "element": "Glace", "arme": "Préservation", "rarete": 4},
@@ -113,7 +113,8 @@ const PERSONNAGES_HSR = [
   {"id": "pionnier-preservation", "nom": "Pionnier • Préservation", "element": "Feu", "arme": "Préservation", "rarete": 5},
   {"id": "pionnier-harmonie", "nom": "Pionnier • Harmonie", "element": "Imaginaire", "arme": "Harmonie", "rarete": 5},
   {"id": "pionnier-souvenir", "nom": "Pionnier • Souvenir", "element": "Glace", "arme": "Souvenir", "rarete": 5},
-  {"id": "pionnier-allegresse", "nom": "Pionnier • Allégresse", "element": "Foudre", "arme": "Allégresse", "rarete": 5}
+  {"id": "pionnier-allegresse", "nom": "Pionnier • Allégresse", "element": "Foudre", "arme": "Allégresse", "rarete": 5},
+  {"id": "perle", "nom": "Perle", "element": "Glace", "arme": "Allégresse", "rarete": 5}
 ];
 
 const PERSONNAGES_WUWA = [
@@ -174,7 +175,9 @@ const PERSONNAGES_WUWA = [
   {"id": "rover-spectro", "nom": "Rover (Spectro)", "element": "Spectro", "arme": "Épée", "rarete": 5},
   {"id": "shorekeeper", "nom": "Shorekeeper", "element": "Spectro", "arme": "Rectifieur", "rarete": 5},
   {"id": "verina", "nom": "Verina", "element": "Spectro", "arme": "Rectifieur", "rarete": 5},
-  {"id": "zani", "nom": "Zani", "element": "Spectro", "arme": "Gantelets", "rarete": 5}
+  {"id": "zani", "nom": "Zani", "element": "Spectro", "arme": "Gantelets", "rarete": 5},
+  {"id": "hsin", "nom": "Hsin", "element": "Electro", "arme": "Rectifieur", "rarete": 5},
+  {"id": "suoming", "nom": "Suoming", "element": "Electro", "arme": "Épée", "rarete": 5}
 ];
 
 const PERSONNAGES_NTE = [
@@ -199,5 +202,6 @@ const PERSONNAGES_NTE = [
   {"id": "shinku", "nom": "Shinku", "element": "Cosmos", "arme": "Condensat", "rarete": 5, "role": "DPS"},
   {"id": "skia", "nom": "Skia", "element": "Lakshana", "arme": "Gaz", "rarete": 4, "role": "DPS"},
   {"id": "zankou", "nom": "Zankou", "element": "Incantation", "arme": "Gaz", "rarete": 5, "role": "DPS"},
-  {"id": "zero", "nom": "Zero", "element": "Cosmos", "arme": "Solide", "rarete": null, "role": "DPS"}
+  {"id": "zero", "nom": "Zero", "element": "Cosmos", "arme": "Solide", "rarete": null, "role": "DPS"},
+  {"id": "blackbird", "nom": "Blackbird", "element": "Psyche", "arme": "Gaz", "rarete": 5, "role": "DPS"}
 ];
